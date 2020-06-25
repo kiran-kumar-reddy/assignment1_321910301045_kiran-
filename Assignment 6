@@ -1,0 +1,72 @@
+Convert Binary number to decimal¶
+
+Ex:1 0 0 1 0 =1 x 2^5 + 0 x 2^4 + 0 x 2^3 + 1 x 2^2 + 0 x 2^1
+
+In [ ]:
+
+n=list(input("Input a binary number")) value=0 for i in range(len(n)): 	digit=n.pop() 	if digit == '1': 		value=value+pow(2,i) print("The decimal value of the number is", value) 
+
+Input a binary number10010 The decimal value of the number is 18 
+
+Generate first N numbers of Fibonacci numbers.Take N value from the user
+
+In [ ]:
+
+def Fibonacci(n): f1=0 f2=1 if (n<1): return for x in range(0,n): print(f2) next=f1+f2 f1=f2 f2=next Fibonacci(n=int(input("Enter the number of fibonacci numbers to be print"))) 
+
+Enter the number of fibonacci numbers to be print10 1 1 2 3 5 8 13 21 34 55 
+
+Display multiplication table of K.Take k value from user
+
+In [ ]:
+
+n=int(input("Multiplication table of")) for i in range(1, 11): print(n, 'x',i, '=',n*i) 
+
+Multiplication table of9 9 x 1 = 9 9 x 2 = 18 9 x 3 = 27 9 x 4 = 36 9 x 5 = 45 9 x 6 = 54 9 x 7 = 63 9 x 8 = 72 9 x 9 = 81 9 x 10 = 90 
+
+Take 10 integers from keyboard using loop and print their average value on the screen print the following patterns using loops********
+
+In [11]:
+
+n=int(input('How many numbers')) s=0 for m in range(n): a=int(input('Enter number')) s+=a avg=s/n print('Average is ', avg) 
+
+How many numbers10 Enter number1 Enter number0 Enter number2 Enter number3 Enter number4 Enter number6 Enter number7 Enter number8 Enter number9 Enter number10 Average is 5.0 
+
+In [16]:
+
+rows = 5 for i in range(0, rows): for j in range(0, i + 1): print("*",end=' ') print("\r") 
+
+* * * * * * * * * * * * * * * 
+
+Write a program to find the GCD or HCF of given two numbers
+
+In [21]:
+
+def hcf(x, y): if x>y: smaller=y else: smaller=x for i in range(1, smaller+1): if((x%i==0) and (y%i==0)): hcf=i return hcf n1=int(input("Enter the first number")) n2=int(input("Enter the second number")) print("The H.C.F. is", hcf(n1,n2)) 
+
+Enter the first number98 Enter the second number22 The H.C.F. is 2 
+
+Write a pythonn program that accepts a word from user and reverse it
+
+In [27]:
+
+a=input("Input a word to reverse: ") for j in range(len(a) - 1, -1, -1): print(a[j],end="") 
+
+Input a word to reverse: python nohtyp
+
+Write a python program to count the number of even and odd numbers from a series of numbers
+
+In [28]:
+
+n=(1, 2, 3, 4, 5, 6, 7, 8, 9) odd=0 even=0 for x in n: if not x % 2: 	 even+=1 else: 	 odd+=1 print("Number of even numbers ",even) print("Number of odd numbers ",odd) 
+
+Number of even numbers 4 Number of odd numbers 5 
+
+Write a python program that prints all the numbers from 0 to 6 expect 3 and 6
+
+In [29]:
+
+for x in range(6): if (x == 3 or x==6): continue print(x,end=' ') 
+
+0 1 2 4 5 
+
